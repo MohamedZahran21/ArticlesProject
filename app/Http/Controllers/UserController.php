@@ -6,5 +6,21 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function home(Request $request){
+        if($request->user()->role=='user'){
+            return view('dashboard');
+        }
+        else{
+            return redirect()->route('admin.dashboard');
+        }
+    }
+    public function index(Request $request){
+        if($request->user()->role=='admin'){
+            return view('admin.dashboard');
+        }
+        else{
+            return redirect()->route('dashboard');
+        }
+    }
     
 }
