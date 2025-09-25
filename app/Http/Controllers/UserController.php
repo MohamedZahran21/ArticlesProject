@@ -28,4 +28,7 @@ class UserController extends Controller
     public function createpost(){
         return view('admin.createpost');
     }
+    public function homepage(){
+        return view('home.homepage');
+    }
 };

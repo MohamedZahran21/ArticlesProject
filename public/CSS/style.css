@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+
+hr{
+   border: solid #000825 5px; 
+}
+.collapse.navbar-collapse{
+    justify-content: center;
+    background-color: white;
+}
+.footer_1{
+    padding: 50px;
+    background: #212529;
+}
+#paragraph1{
+    color: white;
+}
+#parent_div1, .child_div1, .child_div2{
+    display: flex;
+}
+.form1{
+    margin-bottom: 20px;
+    margin-left: 1000px;
+}
+.form-floating{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.table3{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#table1{
+    margin-left: 25%;
+    margin-right: 200px;
+}
+.navbar-nav{
+    margin-right: 100px;
+}
+#paragraphdiv{
+    background-color: #e7e7e7;
+    border: solid black 3px;
+}
+#paragraph_view{
+    font-family: "Roboto";
+}
+.form-control{
+    border: solid black 3px;
+}
+.commentbtn{
+    margin-left: 1050px;
+    margin-top: 5px;
+}
