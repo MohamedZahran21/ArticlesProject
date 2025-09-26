@@ -8,7 +8,7 @@ class UserController extends Controller
 {
     public function home(Request $request){
         if($request->user()->role=='user'){
-            return view('dashboard');
+            return view('home.homepage');
         }
         else{
             return redirect()->route('admin.dashboard');
@@ -31,4 +31,5 @@ class UserController extends Controller
     public function homepage(){
         return view('home.homepage');
     }
+    
 };

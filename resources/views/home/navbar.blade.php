@@ -12,9 +12,25 @@
     </button>
     <div class="collapse navbar-collapse rounded" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-        <a class="nav-link" href="./profile.html">Profile</a>
-        <a class="nav-link" href="./article-create.html">Upload</a>
+        
+         <a class="nav-link active" aria-current="page" href="{{route('dashboard')}}">Home</a>
+         <a class="nav-link" href="./profile.html">Profile</a>
+         <a class="nav-link" href="./article-create.html">Upload</a>
+
+         @if (Route::has('login'))
+
+         @auth
+        
+          <x-app-layout>
+
+         </x-app-layout>
+        
+         @else
+         <a class="nav-link"href="{{route('login')}}">Login</a>
+         <a class="nav-link"href="{{route('register')}}">Register</a>
+         @endauth
+         @endif
+        
       </div>
     </div>
   </div>
